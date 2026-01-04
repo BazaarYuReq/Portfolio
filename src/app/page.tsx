@@ -1,65 +1,295 @@
+"use client";
 import Image from "next/image";
+import { FaInstagram, FaFacebook, FaDiscord, FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <main className="w-[100vw] h-[100vh] flex flex-row ">
+      <section className="bg-purple-800 w-[25vw] h-[100vh] flex flex-col justify-between items-center">
+      
+      <div className="bg-black w-[22vw] h-[40vh] border-2 rounded-3xl m-[20px]" ></div>
+
+      <div className="text-2xl">
+
+        <p>My social accounts</p>
+
+      </div>
+ <div className="flex gap-5 justify-center mt-6 items-center bg-purple-100 w-[25vw] rounded-3xl py-[20px]">
+<div className="flex gap-4">
+ <div className="flex gap-4 ">
+  {/* Instagram */}
+  <a
+    href="https://instagram.com/bilegdemberel_vs_chemistry"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative inline-block cursor-pointer"
+  >
+    <div className="absolute inset-0 rounded-2xl bg-neutral-300 shadow-[0_8px_0_rgb(180,180,180)]"></div>
+    <div
+      className="
+        relative
+        bg-white
+        rounded-2xl
+        p-4
+        flex items-center justify-center
+        text-pink-800
+        hover:text-pink-700
+        translate-y-0
+        shadow-[0_6px_0_rgb(200,200,200),0_10px_10px_rgba(0,0,0,0.05)]
+        transition-all duration-150 ease-out
+        hover:translate-y-[-2px]
+        hover:shadow-[0_10px_0_rgb(200,200,200),0_14px_12px_rgba(0,0,0,0.08)]
+        active:translate-y-0
+        active:scale-[0.97]
+      "
+    >
+      <FaInstagram className="text-4xl" />
     </div>
+  </a>
+
+  {/* Facebook */}
+  <a
+    href="https://www.facebook.com/khongoroo.khongorzul.9085"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative inline-block cursor-pointer"
+  >
+    <div className="absolute inset-0 rounded-2xl bg-neutral-300 shadow-[0_8px_0_rgb(180,180,180)]"></div>
+    <div
+      className="
+        relative
+        bg-white
+        rounded-2xl
+        p-4
+        flex items-center justify-center
+        text-blue-900
+        hover:text-blue-700
+        translate-y-0
+        shadow-[0_6px_0_rgb(200,200,200),0_10px_10px_rgba(0,0,0,0.05)]
+        transition-all duration-150 ease-out
+        hover:translate-y-[-2px]
+        hover:shadow-[0_10px_0_rgb(200,200,200),0_14px_12px_rgba(0,0,0,0.08)]
+        active:translate-y-0
+        active:scale-[0.97]
+      "
+    >
+      <FaFacebook className="text-4xl" />
+    </div>
+  </a>
+
+  {/* Discord */}
+  <a
+    href="https://discord.com/users/BazaarYuReq"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative inline-block cursor-pointer"
+  >
+    <div className="absolute inset-0 rounded-2xl bg-neutral-300 shadow-[0_8px_0_rgb(180,180,180)]"></div>
+    <div
+      className="
+        relative
+        bg-white
+        rounded-2xl
+        p-4
+        flex items-center justify-center
+        text-indigo-800
+        hover:text-indigo-700
+        translate-y-0
+        shadow-[0_6px_0_rgb(200,200,200),0_10px_10px_rgba(0,0,0,0.05)]
+        transition-all duration-150 ease-out
+        hover:translate-y-[-2px]
+        hover:shadow-[0_10px_0_rgb(200,200,200),0_14px_12px_rgba(0,0,0,0.08)]
+        active:translate-y-0
+        active:scale-[0.97]
+      "
+    >
+      <FaDiscord className="text-4xl" />
+    </div>
+  </a>
+
+  {/* GitHub */}
+  <a
+    href="https://github.com/BazaarYuReq"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative inline-block cursor-pointer"
+  >
+    <div className="absolute inset-0 rounded-2xl bg-neutral-300 shadow-[0_8px_0_rgb(180,180,180)]"></div>
+    <div
+      className="
+        relative
+        bg-white
+        rounded-2xl
+        p-4
+        flex items-center justify-center
+        text-gray-900
+        hover:text-gray-800
+        translate-y-0
+        shadow-[0_6px_0_rgb(200,200,200),0_10px_10px_rgba(0,0,0,0.05)]
+        transition-all duration-150 ease-out
+        hover:translate-y-[-2px]
+        hover:shadow-[0_10px_0_rgb(200,200,200),0_14px_12px_rgba(0,0,0,0.08)]
+        active:translate-y-0
+        active:scale-[0.97]
+      "
+    >
+      <FaGithub className="text-4xl" />
+    </div>
+  </a>
+</div>
+
+</div>
+
+</div>
+    <div className="w-[22vw] h-[25vh] bg-black"></div>
+
+    </section>
+    <section className="w-[75vw] h-[100vh] bg-amber-500">
+      <h1 className="text-5xl text-purple-700 font-bold font-sans"> My Skills</h1>
+    <section className="grid grid-cols-4 gap-8 w-[75vw] mx-auto place-items-center border-5 rounded-3xl bg-white">
+  <img src="/languages/html.svg" alt="HTML" width="64" height="64" />
+  <img src="/languages/css.svg" alt="CSS" width="64" height="64" />
+  <img src="/languages/javascript.svg" alt="JavaScript" width="64" height="64" />
+  <img src="/languages/typescript.svg" alt="TypeScript" width="64" height="64" />
+  <img src="/languages/react.svg" alt="React" width="64" height="64" />
+  <img src="/languages/nodejs.svg" alt="NodeJS" width="64" height="64" />
+  <img src="/languages/nodejs.svg" alt="NodeJS" width="64" height="64" />
+  <img src="/languages/nodejs.svg" alt="NodeJS" width="64" height="64" />
+</section>
+
+      <div className="flex flex-row gap-10">
+<div className="relative">
+  {/* Fixed base */}
+  <div
+    className="
+      absolute inset-0
+      rounded-2xl
+      bg-neutral-300
+      shadow-inner
+    "
+  />
+
+  {/* Button face */}
+  <div
+    className="
+      relative
+      bg-white
+      rounded-2xl
+      p-6
+      border border-neutral-200
+
+      translate-y-[-2px]
+      shadow-[0_6px_0_rgb(200,200,200)]
+
+      transition-all
+      duration-100
+      ease-out
+
+      hover:translate-y-[-2px]
+      hover:shadow-[0_12px_0_rgb(200,200,200)]
+
+      active:translate-y-0
+      active:shadow-[0_2px_0_rgb(200,200,200)]
+    "
+  >
+    {/* content */}
+    <h3 className="font-semibold text-lg">What I do</h3>
+    <p className="text-sm text-neutral-600">
+    I work with HTML, CSS, JavaScript, TypeScript, React, and Next.js, focusing
+    mainly on frontend development while learning full-stack skills.
+    </p>
+  </div>
+</div>
+
+<div className="relative">
+  {/* Fixed base */}
+  <div
+    className="
+      absolute inset-0
+      rounded-2xl
+      bg-neutral-300
+      shadow-inner
+    "
+  />
+
+  {/* Button face */}
+  <div
+    className="
+      relative
+      bg-white
+      rounded-2xl
+      p-6
+      border border-neutral-200
+
+      translate-y-[-2px]
+      shadow-[0_6px_0_rgb(200,200,200)]
+
+      transition-all
+      duration-100
+      ease-out
+
+      hover:translate-y-[-2px]
+      hover:shadow-[0_12px_0_rgb(200,200,200)]
+
+      active:translate-y-0
+      active:shadow-[0_2px_0_rgb(200,200,200)]
+    "
+  >
+    {/* content */}
+    <h3 className="font-semibold text-lg">What I do</h3>
+    <p className="text-sm text-neutral-600">
+    I work with HTML, CSS, JavaScript, TypeScript, React, and Next.js, focusing
+    mainly on frontend development while learning full-stack skills.
+    </p>
+  </div>
+</div>
+
+<div className="relative">
+  {/* Fixed base */}
+  <div
+    className="
+      absolute inset-0
+      rounded-2xl
+      bg-neutral-300
+      shadow-inner
+    "
+  />
+
+  {/* Button face */}
+  <div
+    className="
+      relative
+      bg-white
+      rounded-2xl
+      p-6
+      border border-neutral-200
+
+      translate-y-[-2px]
+      shadow-[0_6px_0_rgb(200,200,200)]
+
+      transition-all
+      duration-100
+      ease-out
+
+      hover:translate-y-[-2px]
+      hover:shadow-[0_12px_0_rgb(200,200,200)]
+
+      active:translate-y-0
+      active:shadow-[0_2px_0_rgb(200,200,200)]
+    "
+  >
+    {/* content */}
+    <h3 className="font-semibold text-lg">What I do</h3>
+    <p className="text-sm text-neutral-600">
+    I work with HTML, CSS, JavaScript, TypeScript, React, and Next.js, focusing
+    mainly on frontend development while learning full-stack skills.
+    </p>
+  </div>
+</div>
+
+      </div>
+    </section>
+
+    </main>
   );
 }
