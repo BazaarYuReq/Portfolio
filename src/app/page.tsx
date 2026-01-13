@@ -236,6 +236,20 @@ export default function Home() {
     <span class="inline-block tabular-nums tracking-wider font-display font-medium text-white">6</span>
   </div>
 </a>
+<div class="w-[190px] h-[254px] perspective">
+  <div class="relative w-full h-full text-center transition-transform duration-700 transform-style-preserve-3d group hover:rotate-y-180">
+
+    <div class="absolute w-full h-full flex flex-col justify-center items-center bg-gradient-to-br from-bisque/80 via-[rgb(255,231,222)]/80 to-[rgb(255,211,195)]/80 text-coral shadow-lg border border-coral rounded-xl backface-hidden">
+      <p class="text-xl font-extrabold m-0">FLIP CARD</p>
+      <p>Hover Me</p>
+    </div>
+  
+    <div class="absolute w-full h-full flex flex-col justify-center items-center bg-gradient-to-br from-[rgb(255,174,145)]/80 via-coral/80 to-bisque/80 text-white shadow-lg border border-coral rounded-xl backface-hidden rotate-y-180">
+      <p class="text-xl font-extrabold m-0">BACK</p>
+      <p>Leave Me</p>
+    </div>
+  </div>
+</div>
 
 
 <div className="relative">
