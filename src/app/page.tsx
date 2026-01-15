@@ -69,8 +69,8 @@ function RoadmapItem({
 
 export default function Home() {
   return (
-    <main className="w-[100vw] h-[100vh] flex flex-row bg-black">
-      
+    <main className="w-[100vw] min-h-max flex flex-row bg-black">
+      <section>
       <section className="bg-black w-[25vw] h-[100vh] text-white border-yellow-500 border-3 flex flex-col justify-between items-center">
 
   {/* ================= BLACK PFP BOX (UNCHANGED) ================= */}
@@ -91,7 +91,7 @@ export default function Home() {
           overflow-hidden
         `}
         style={{
-          maxHeight: open ? "260px" : "56px",
+          maxHeight: open ? "260px" : "96px",
         }}
       >
         <div className="flex flex-col items-center w-full">
@@ -104,7 +104,7 @@ export default function Home() {
             <span>My Socials</span>
             <span
               className={`transition-transform duration-300 ${
-                open ? "rotate-180" : "rotate-0"
+                open ? "rotate-360" : "rotate-180"
               }`}
             >
               ▼
@@ -197,33 +197,8 @@ export default function Home() {
 
 <section
 className="w-[75vw] h-[100vh] text-yellow-500 text-center">
-<div >
-  <h1 className="text-5xl">My Coding Journey</h1>
-  <p>August 2025,
-    I started my coding journey and I knew nothing about coding with the basic table row and column knowledge to do my bidding in ICT subject I studied in 9th and 10th grade
-  </p>
-  <p>September 2025,
-    This is where I started picking up normal web developing skills in web building using HTML and CSS. During this time I was making new friends in my coding bootcamp to discuss about our projects we're going to make.
-  </p>
-  <p>October 2025,
-    This month was hard as to learn my JavaScript with my studies in subject almost catching up
-  </p>
-  <p>November 2025,
-    The first project started with my teammates but I struggled in building the app using NextJS and React, only coming up with the routing to other pages and normal popups on click to save it in local memory. I almost gave up here to do coding, as many of my friends knew how to do it better than mine. Espeically after hacktoberfest after my team lost 3rd place in close tie </p>
-  <p>December 2025,
-    I've kept creating many small projects to increase my coding skill but especially for my team's project and making one with the longest time of tampering becoming the project but I started my own project almost at december, in which my personal project must be created for my graduation from the coding bootcamp. So I came up with a great idea to save time and develop it more unique and better than any other projects, I started a project named PersonalPlanner. At first it was a mess with bad ui and messy as my before projects. Then I decided to just work on making it visiually pleasing with its own style so I basically made a laptop inside of an computer.
-  </p>
-  <p>January 2025,
-    I finished my coding bootcamp with my team project and personal project being 29/30, which I didn't think about achieving such feat. I have overestimated my friends skill over mine. I engineered my project more unique and complex yet so simple than my friends. Now, I'm thinking about making my project use barely any back-end to be client-side focused to turn it into MVP as a solo till I find people to work on my project with me. That way I can have my project well known around the world with genius engineering as a beginner coder.
 
-  </p>
-  <p>Now I'm working on my projects to implement my MVP and work with many tech stack to create many projects that will benefit not only me but many millions of people around the world. Internshipping at my coding academy to level my skill further and learn coding further with python, rust and redis. But till June I might not dedicate as much as I did before as I have to lock in.</p>
-</div>
-<div className="grid grid-cols-3 gap-8 mb-12">
-          <InfoCard title="What I Do" text="Frontend development with modern tools." />
-          <InfoCard title="Focus" text="Clean UI, smooth UX, scalable code." />
-          <InfoCard title="Learning" text="Full-stack & backend systems." />
-        </div>
+</section>
 <section className="mt-24">
   <h2 className="text-4xl font-bold mb-12">
     My <span className="text-yellow-400">Journey</span>
